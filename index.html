@@ -34,21 +34,25 @@
         <!--Первый этаж-->
         <div class = "floor-main">
 
-            <h1 class = "floor-main__heading-1">Model S</h1>
-            <div class = "floor-main__heading-2">Добро пожаловать в будущее!</div>
+            <h1 class = "title">Model S</h1>
+            <div class = "subtitle">Добро пожаловать в будущее!</div>
             <!--Фон-->
             <div class = "floor-main__backround-wrap">
-                <div class = "floor-main__backround">
-                </div>
+                
             </div>
+
+            <div class = "floor-main__backround">
+                <!--Фото автомобиля-->
+                <div class = "floor-main__foto">
+                </div>
+                <!--<img src="/img/tesla-png-tesla-png-hd-1636.png" alt="Tesla car" class = "floor-main__foto">-->
+            </div>
+
             <!--<img src="/img/Tesla-Wordmark-Red opacity.png" alt="Logo" class = "floor-main__backround">-->
 
-            <!--Фото автомобиля-->
-            <div class = "floor-main__foto">
-            </div>
-            <!--<img src="/img/tesla-png-tesla-png-hd-1636.png" alt="Tesla car" class = "floor-main__foto">-->
+            
 
-            <div class = "floor-main-footer">
+            <div class = "description">
                 <div class = "specifications">
                     <div class = "specifications__item">
                         <!--Изображение спидометра-->
@@ -115,10 +119,13 @@
         <div class = "floor-feature">
             <div class = "img-floor-feature">
                 <h2 class = "img-floor-feature__heading">Model S</h2>
-                <img src="" alt="" class = "img-floor-feature__foto"> <!--Фото салона-->
+                <div class = "img-floor-feature__foto-wrapper">
+                    <!--Фото салона-->
+                </div>
             </div>
 
             <div class = "description-floor-feature">
+               
                 <div class = "description-floor-feature__text">
                     <h3 class = "description-floor-feature__text-heading">Будущее вождения</h3>
                     <span class = "floor-feature__text-body">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена
@@ -130,8 +137,6 @@
                     <div class = "description-floor-feature__display">
                         <!--Иконка телефона-->
                         <div class = "description-floor-feature__display-icon"> 
-                            <img src="" alt="" class = "description-floor-feature__display-icon-part-1">
-                            <img src="" alt="" class = "description-floor-feature__display-icon-part-2">
                         </div>
             
                         <div class = "description-floor-feature__outer-wrap">
@@ -148,10 +153,7 @@
                     <div class = "description-floor-feature__WiFi">
                         <!--Иконка WiFi-->
                         <div class = "description-floor-feature__WiFi-icon">
-                            <img src="" alt="" class = "description-floor-feature__WiFi-icon-item-1">
-                            <img src="" alt="" class = "description-floor-feature__WiFi-icon-item-2">
-                            <img src="" alt="" class = "description-floor-feature__WiFi-icon-item-3">
-                            <img src="" alt="" class = "description-floor-feature__WiFi-icon-item-4">
+                            <div class = "description-floor-feature__WiFi-icon-inner"></div>
                         </div>
                 
                         <div class = "description-floor-feature__outer-wrap">
@@ -166,9 +168,10 @@
 
                     <div class = "description-floor-feature__battery">
                         <!--Иконка батареи-->
-                        <div class = "description-floor-feature__battery-icon"> 
-                            <img src="" alt="" class = "description-floor-feature__battery-icon-item-1">
-                            <img src="" alt="" class = "description-floor-feature__battery-icon-item-2">
+                        <div class = "description-floor-feature__battery-icon">
+                            <div class = "description-floor-feature__battery-icon-inner">
+
+                            </div>
                         </div>
                     
                         <div class = "description-floor-feature__outer-wrap">
@@ -182,10 +185,15 @@
                         </div>
                     </div>
                 </div>
+            
 
-                <div class = "order-motiv">
-                    <div class = "order-motiv__tlearn-more-text">
-                        УЗНАТЬ БОЛЬШЕ
+                <div class = "floor-feature__order-motiv">
+                    <div class = "floor-feature__order-motiv-learn-more">
+                        <div class = "order-motiv__learn-more-info">
+                        </div>
+                        <div class = "order-motiv__learn-more-text">
+                            УЗНАТЬ БОЛЬШЕ
+                        </div>
                     </div>
                     <button class = "order-motiv__order-button-dark">
                         Заказать
@@ -205,7 +213,7 @@
                          с переворотом авто.</span>
                 </div>
 
-                <div class = "description-floor-security__text">
+                <div class = "description-floor-security__text hidden-375px">
                     <h3 class = "description-floor-security__text-heading">Оценка защиты:</h3>
 
                     <div class = "description-floor-security__list">
@@ -214,11 +222,11 @@
                             <span class = "description-floor-security__list-item-text">Спереди</span>
                             <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
 
@@ -226,11 +234,11 @@
                             <span class = "description-floor-security__list-item-text">Сбоку</span>
                             <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
 
@@ -239,11 +247,11 @@
                             <span class = "description-floor-security__list-item-text-small">(стойка)</span>
                             <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
 
@@ -251,11 +259,11 @@
                             <span class = "description-floor-security__list-item-text">ВОДИТЕЛЬ</span>
                             <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
 
@@ -263,11 +271,11 @@
                             <span class = "description-floor-security__list-item-text">ПАССАжир</span>
                             <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
-                                <img src="" alt="" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
                     </div>
@@ -276,19 +284,22 @@
                 <div class = "description-floor-security__shield">
                     <!--Щит с галочкой-->
                     <div class = "description-floor-security__shield-icon">
-                        <img src="" alt="" class = "description-floor-security__shield-icon-item-1">
-                        <img src="" alt="" class = "description-floor-security__shield-icon-item-2">
+                        <img src="/img/Group.png" alt="shield" class = "description-floor-security__shield-icon">
                     </div>
-                    <div class = "description-floor-security__text">
-                        <span class = "description-floor-security__text-big">5 звезд</span>
-                        <span class = "description-floor-security__text-medium">безопасности</span>
+                    <div class = "description-floor-security__shield-text">
+                        <span class = "description-floor-security__shield-text-big">5 звезд</span>
+                        <span class = "description-floor-security__shield-text-medium">безопасности</span>
                     </div>
                 </div>
 
-                <div class = "order-motiv">
-                    <div class = "order-motiv__tlearn-more-text">
-                        УЗНАТЬ БОЛЬШЕ
-                    </div>
+                <div class = "floor-security__order-motiv">
+                    <div class = "floor-security__order-motiv-learn-more">
+                        <div class = "order-motiv__learn-more-info">
+                        </div>
+                        <div class = "order-motiv__learn-more-text">
+                            УЗНАТЬ БОЛЬШЕ
+                        </div>
+                    </div>    
                     <button class = "order-motiv__order-button-dark">
                         Заказать
                     </button>
@@ -298,31 +309,31 @@
             <div class = "img-floor-security">
 
                 <div class = "img-floor-security__background">
-                    Model S
+                    Model&nbsp;S
                 </div>
 
-                <img src="" alt="" class = "img-floor-security__foto">
+                <img src="/img/Car frame.png" alt="car" class = "img-floor-security__foto">
 
                 <div class = "img-floor-security__note-text-1">
                     Защита от удара спереди
                 </div>
-                <img src="" alt="" class = "img-floor-security__note-img-1">
+                <img src="/img/Group 14.png" alt="pointer" class = "img-floor-security__note-img-1">
 
                 <div class = "img-floor-security__note-text-2">
                     Защита от удара сбоку
                 </div>
-                <img src="" alt="" class = "img-floor-security__note-img-2">
+                <img src="/img/Group 15.png" alt="pointer" class = "img-floor-security__note-img-2">
 
                 <div class = "img-floor-security__note-text-3">
                     Минимальный риск перевернуться в аварии
                 </div>
-                <img src="" alt="" class = "img-floor-security__note-img-3">
+                <img src="/img/Group 16.png" alt="pointer" class = "img-floor-security__note-img-3">
 
                 <div class = "logo-school">
                     <div class = "logo-school__text">
                         РАЗРАБОТАНО В
                     </div>
-                    <img src="" alt="" class = "logo-school__icon">
+                    <img src="/img/Маленький желто-белый-svg.png" alt="logo Web Hero" class = "logo-school__icon">
                 </div>
             </div>
         </div> 
