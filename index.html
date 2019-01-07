@@ -3,183 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/style.css'>
+    <link rel='stylesheet' href='/fonts.css'>
     <title>Tesla landing</title>
 </head>
 <body>
-    <header class = "header">
+    <header class="header">
 
-        <div class = "logo">
-            <img src="" alt="">
+        <div class="logo">
         </div>
 
         <nav class="menu-pages">
-            <li>
-                <ul class = "menu-pages__item">Model S</ul>
-                <ul class = "menu-pages__item">Model X</ul>
-                <ul class = "menu-pages__item">Model 3</ul>
-                <ul class = "menu-pages__item">Roadster</ul>
-                <ul class = "menu-pages__item">Energy</ul>
-            </li>
+            <a href="" class="menu-pages__item_active">Model S</a>
+            <a href="" class="menu-pages__item">Model X</a>
+            <a href="" class="menu-pages__item">Model 3</a>
+            <a href="" class="menu-pages__item">Roadster</a>
+            <a href="" class="menu-pages__item">Energy</a>
         </nav>
+
         <nav class="menu-nav">
-            <li>
-                <ul class="menu-nav__item">Магазин</ul>
-                <ul class="menu-nav__item">Войти</ul>
-                <ul class="menu-nav__item">
-                    <span class="menu-nav__burger"></span>
-                    <span class="menu-nav__burger"></span>
-                    <span class="menu-nav__burger"></span>
-                </ul>
-            </li>
+            <a href="" class="menu-nav__item">Магазин</a>
+            <a href="" class="menu-nav__item">Войти</a>
+            <a href="" class="menu-nav__item-burger">
+                <img src="/img/Vector.png" alt="Burger menu" class="menu-nav__burger">
+            </a>
         </nav>
     </header>
     <main>
         <!--Первый этаж-->
-        <div class = "floor-1">
+        <div class="floor-main">
 
-            <h1 class = "floor-1__heading-1">Model S</h1>
-            <span class = "floor-1__heading-2">Добро пожаловать в будущее!</span>
-            <img src="" alt="" class = "floor-1__backround"> <!--Фон-->
-            <img src="" alt="" class = "floor-1__foto"> <!--Фото автомобиля-->
+            <h1 class="title">Model S</h1>
+            <div class="subtitle">Добро пожаловать в будущее!</div>
 
-            <div class = "floor-1-footer">
-                <div class = "specifications">
-                    <div class = "specifications__speed">
+            <!--Фон-->
+            <div class="floor-main__backround">
+                <!--Фото автомобиля-->
+                <div class="floor-main__foto">
+                </div>
+            </div>
+
+            <div class="description">
+                <div class="specifications">
+                    <div class="specifications__item">
                         <!--Изображение спидометра-->
-                        <div class = "specifications__speedometer"> 
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                        <div class="specifications__icon-wrap-speedometer"> 
+                            <img src="/img/Speed.png" alt="speedometer" class="specifications__speedometer">
                         </div>
 
-                        <div class = "specifications__text-outer-wrap">
-                            <div class = "specifications__text-inner-wrap">
-                                <span class = "specifications__big-text">2,7</span>
-                                <span class = "specifications__medium-text">сек</span>
+                        <div class="specifications__text-outer-wrap">
+                            <div class="specifications__text-inner-wrap">
+                                <span class="specifications__big-text-speed">2,7</span>
+                                <span class="specifications__medium-text">сек</span>
                             </div>
 
-                            <div class = "specifications__small-text">
+                            <div class="specifications__small-text">
                                 0-100 км/час
                             </div>
                         </div>
                     </div>
 
-                    <div class = "specifications__distance">
+                    <div class="specifications__item">
                         <!--Пиктограмма трека-->
-                        <div class = "specifications__track"> 
-                            <img src="" alt="">
+                        <div class="specifications__icon-wrap-track"> 
+                            <img src="/img/Road icon.png" alt="Road icon" class="specifications__track">
                         </div>
 
-                        <div class = "specifications__num-wrap">
-                            <div class = "specifications__span-wrap">
-                                <span class = "specifications__big-text">632</span>
-                                <span class = "specifications__medium-text">км</span>
+                        <div class="specifications__text-outer-wrap">
+                            <div class="specifications__text-inner-wrap">
+                                <span class="specifications__big-text-track">632</span>
+                                <span class="specifications__medium-text">км</span>
                             </div>
                         
-                            <div class = "specifications__small-text">
+                            <div class="specifications__small-text">
                                 запас хода
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class = "order-motiv">
-                    <div class = "sorder-motiv__test-drive-wrap">
-                        <div class = "order-motiv__test-drive-rudder"> <!--Руль-->
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                <div class="order-motiv">
+                    <div class="order-motiv__test-drive-wrap">
+                        <!--Руль-->
+                        <div class="order-motiv__test-drive-rudder">
+                            
                         </div>
         
-                        <span class = "order-motiv__test-drive-text">Тест драйв</span>
+                        <span class="order-motiv__test-drive-text">Тест драйв</span>
                     </div>
             
-                    <button class = "order-motiv__order-button-light">
+                    <button class="order-motiv__order-button-light">
                         Заказать
                     </button>
                 </div>
-
             </div>
 
-            <img src="" alt=""> <!--Стрелка вниз-->
+            <!--Стрелка вниз-->
+            <div class='floor-main__corner-down'>
 
+            </div>
         </div>
 
         <!--Второй этаж-->
-        <div class = "floor-2">
-            <div class = "img-floor-2">
-                <h2 class = "img-floor-2__heading">Model S</h2>
-                <img src="" alt="" class = "img-floor-2__foto"> <!--Фото салона-->
+        <div class="floor-feature">
+            <div class = "img-floor-feature">
+                <h2 class = "img-floor-feature__heading">Model S</h2>
+                <div class = "img-floor-feature__foto-wrapper">
+                    <!--Фото салона-->
+                </div>
             </div>
 
-            <div class = "description-floor-2">
-                <div class = "description-floor-2__text">
-                    <h3 class = "description-floor-2__text-heading">Будущее вождения</h3>
-                    <span class = "floor-2__text-body">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена
+            <div class = "description-floor-feature">
+               
+                <div class = "description-floor-feature__text">
+                    <h3 class = "description-floor-feature__text-heading">Будущее вождения</h3>
+                    <span class = "floor-feature__text-body">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена
                          современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую 
                          с студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</span>
                 </div>
 
-                <div class = "description-floor-2__specifications">
-                    <div class = "description-floor-2__display">
+                <div class = "description-floor-feature__specifications">
+                    <div class = "description-floor-feature__display">
                         <!--Иконка телефона-->
-                        <div class = "description-floor-2__display-icon"> 
-                            <img src="" alt="" class = "description-floor-2__display-icon-part-1">
-                            <img src="" alt="" class = "description-floor-2__display-icon-part-2">
+                        <div class = "description-floor-feature__display-icon"> 
                         </div>
             
-                        <div class = "description-floor-2__outer-wrap">
-                            <div class = "description-floor-2__inner-wrap">
-                                <span class = "description-floor-2__big-text">17</span>
-                                <span class = "description-floor-2__medium-text">дюймов</span>
+                        <div class = "description-floor-feature__outer-wrap">
+                            <div class = "description-floor-feature__inner-wrap">
+                                <span class = "description-floor-feature__big-text">17</span>
+                                <span class = "description-floor-feature__medium-text">дюймов</span>
                             </div>
-                            <div class = "description-floor-2__small-text">
+                            <div class = "description-floor-feature__small-text">
                                 Большой дисплей
                             </div>
                         </div>
                     </div>
 
-                    <div class = "description-floor-2__WiFi">
+                    <div class = "description-floor-feature__WiFi">
                         <!--Иконка WiFi-->
-                        <div class = "description-floor-2__WiFi-icon">
-                            <img src="" alt="" class = "description-floor-2__WiFi-icon-item-1">
-                            <img src="" alt="" class = "description-floor-2__WiFi-icon-item-2">
-                            <img src="" alt="" class = "description-floor-2__WiFi-icon-item-3">
-                            <img src="" alt="" class = "description-floor-2__WiFi-icon-item-4">
+                        <div class = "description-floor-feature__WiFi-icon">
+                            <div class = "description-floor-feature__WiFi-icon-inner"></div>
                         </div>
                 
-                        <div class = "description-floor-2__outer-wrap">
-                            <div class = "description-floor-2__inner-wrap">
-                                <span class = "description-floor-2__medium-text">Беспроводное обновление ПО</span>
+                        <div class = "description-floor-feature__outer-wrap">
+                            <div class = "description-floor-feature__inner-wrap">
+                                <span class = "description-floor-feature__medium-text">Беспроводное обновление ПО</span>
                             </div>
-                            <div class = "description-floor-2__small-text">
+                            <div class = "description-floor-feature__small-text">
                                 Повышенная функциональность
                             </div>
                         </div>
                     </div>
 
-                    <div class = "description-floor-2__battery">
+                    <div class = "description-floor-feature__battery">
                         <!--Иконка батареи-->
-                        <div class = "description-floor-2__battery-icon"> 
-                            <img src="" alt="" class = "description-floor-2__battery-icon-item-1">
-                            <img src="" alt="" class = "description-floor-2__battery-icon-item-2">
+                        <div class = "description-floor-feature__battery-icon">
+                            <div class = "description-floor-feature__battery-icon-inner">
+
+                            </div>
                         </div>
                     
-                        <div class = "description-floor-2__outer-wrap">
-                            <div class = "description-floor-2__inner-wrap">
-                                <span class = "description-floor-2__big-text">894</span>
-                                <span class = "description-floor-2__medium-text">литра</span>
+                        <div class = "description-floor-feature__outer-wrap">
+                            <div class = "description-floor-feature__inner-wrap">
+                                <span class = "description-floor-feature__big-text">894</span>
+                                <span class = "description-floor-feature__medium-text">литра</span>
                             </div>
-                            <div class = "description-floor-2__small-text">
+                            <div class = "description-floor-feature__small-text">
                                 Объем грузового пространства
                             </div>
                         </div>
                     </div>
                 </div>
+            
 
-                <div class = "order-motiv">
-                    <div class = "order-motiv__tlearn-more-text">
-                        УЗНАТЬ БОЛЬШЕ
+                <div class = "floor-feature__order-motiv">
+                    <div class = "floor-feature__order-motiv-learn-more">
+                        <div class = "order-motiv__learn-more-info">
+                        </div>
+                        <div class = "order-motiv__learn-more-text">
+                            УЗНАТЬ БОЛЬШЕ
+                        </div>
                     </div>
                     <button class = "order-motiv__order-button-dark">
                         Заказать
@@ -189,134 +192,124 @@
         </div>
 
         <!--Третий этаж-->
-        <div class = "floor-3">
-            <div class = "description-floor-3">
+        <div class="floor-security">
+            <div class="description-floor-security">
 
-                <div class = "description-floor-3__text">
-                    <h3 class = "description-floor-3__text-heading">Самый безопасный автомобиль в мире</h3>
-                    <span class = "description-floor-3__text-body">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд 
+                <div class = "description-floor-security__text">
+                    <h3 class = "description-floor-security__text-heading">Самый безопасный автомобиль в мире</h3>
+                    <span class = "description-floor-security__text-body">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд 
                         по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП
                          с переворотом авто.</span>
                 </div>
 
-                <div class = "description-floor-3__text">
-                    <h3 class = "description-floor-3__text-heading">Оценка защиты:</h3>
+                <div class = "description-floor-security__text hidden-375px">
+                    <h3 class = "description-floor-security__text-heading">Оценка защиты:</h3>
 
-                    <div class = "description-floor-3__list">
+                    <div class = "description-floor-security__list">
 
-                        <div class = "description-floor-3__list-item">
-                            <span class = "description-floor-3__list-item-text">Спереди</span>
-                            <div class = "description-floor-3__list-item-stars">
+                        <div class = "description-floor-security__list-item">
+                            <span class = "description-floor-security__list-item-text">Спереди</span>
+                            <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
 
-                        <div class = "description-floor-3__list-item">
-                            <span class = "description-floor-3__list-item-text">Сбоку</span>
-                            <div class = "description-floor-3__list-item-stars">
+                        <div class = "description-floor-security__list-item">
+                            <span class = "description-floor-security__list-item-text">Сбоку</span>
+                            <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
 
-                        <div class = "description-floor-3__list-item">
-                            <span class = "description-floor-3__list-item-text">Сбоку</span>
-                            <span class = "description-floor-3__list-item-text-small">(стойка)</span>
-                            <div class = "description-floor-3__list-item-stars">
+                        <div class = "description-floor-security__list-item">
+                            <span class = "description-floor-security__list-item-text">Сбоку</span>
+                            <span class = "description-floor-security__list-item-text-small">(стойка)</span>
+                            <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
 
-                        <div class = "description-floor-3__list-item">
-                            <span class = "description-floor-3__list-item-text">ВОДИТЕЛЬ</span>
-                            <div class = "description-floor-3__list-item-stars">
+                        <div class = "description-floor-security__list-item">
+                            <span class = "description-floor-security__list-item-text">ВОДИТЕЛЬ</span>
+                            <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
 
-                        <div class = "description-floor-3__list-item">
-                            <span class = "description-floor-3__list-item-text">ПАССАжир</span>
-                            <div class = "description-floor-3__list-item-stars">
+                        <div class = "description-floor-security__list-item">
+                            <span class = "description-floor-security__list-item-text">ПАССАжир</span>
+                            <div class = "description-floor-security__list-item-stars">
                                 <!--Звезды-->
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
-                                <img src="" alt="" class = "description-floor-3__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
+                                <img src="/img/Star.png" alt="star" class = "description-floor-security__star">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class = "description-floor-3__shield">
+                <div class = "description-floor-security__shield">
                     <!--Щит с галочкой-->
-                    <div class = "description-floor-3__shield-icon">
-                        <img src="" alt="" class = "description-floor-3__shield-icon-item-1">
-                        <img src="" alt="" class = "description-floor-3__shield-icon-item-2">
+                    <div class = "description-floor-security__shield-icon">
+                        <img src="/img/Group.png" alt="shield" class = "description-floor-security__shield-icon">
                     </div>
-                    <div class = "description-floor-3__text">
-                        <span class = "description-floor-3__text-big">5 звезд</span>
-                        <span class = "description-floor-3__text-medium">безопасности</span>
+                    <div class = "description-floor-security__shield-text">
+                        <span class = "description-floor-security__shield-text-big">5 звезд</span>
+                        <span class = "description-floor-security__shield-text-medium">безопасности</span>
                     </div>
                 </div>
 
-                <div class = "order-motiv">
-                    <div class = "order-motiv__tlearn-more-text">
-                        УЗНАТЬ БОЛЬШЕ
-                    </div>
+                <div class = "floor-security__order-motiv">
+                    <div class = "floor-security__order-motiv-learn-more">
+                        <div class = "order-motiv__learn-more-info">
+                        </div>
+                        <div class = "order-motiv__learn-more-text">
+                            УЗНАТЬ БОЛЬШЕ
+                        </div>
+                    </div>    
                     <button class = "order-motiv__order-button-dark">
                         Заказать
                     </button>
                 </div>
             </div>
 
-            <div class = "img-floor-3">
+            <div class="img-floor-security">
 
-                <div class = "img-floor-3__background">
-                    Model S
+                <div class="img-floor-security__background">
+                    Model&nbsp;S
                 </div>
 
-                <img src="" alt="" class = "img-floor-3__foto">
-
-                <div class = "img-floor-3__note-text-1">
-                    Защита от удара спереди
+                
+                <div class="img-floor-security__foto">  
                 </div>
-                <img src="" alt="" class = "img-floor-3__note-img-1">
-
-                <div class = "img-floor-3__note-text-2">
-                    Защита от удара сбоку
-                </div>
-                <img src="" alt="" class = "img-floor-3__note-img-2">
-
-                <div class = "img-floor-3__note-text-3">
-                    Минимальный риск перевернуться в аварии
-                </div>
-                <img src="" alt="" class = "img-floor-3__note-img-3">
-
-                <div class = "logo-school">
-                    <div class = "logo-school__text">
+            
+                <div class="logo-school">
+                    <div class="logo-school__text">
                         РАЗРАБОТАНО В
                     </div>
-                    <img src="" alt="" class = "logo-school__icon">
+                    <img src="/img/Маленький желто-белый-svg.png" alt="logo Web Hero" class="logo-school__icon">
                 </div>
             </div>
         </div> 
