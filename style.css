@@ -92,8 +92,6 @@ button {
     background-size: 100%;
 }
 
-
-
 .floor-main__backround {
     background-repeat: no-repeat;
     background-position: center;
@@ -182,7 +180,6 @@ button {
 .order-motiv__order-button-light:hover {
     color: #FFFFFF;
     background-color: #E51937;
-
 }
 
 .order-motiv__order-button-dark{
@@ -199,7 +196,6 @@ button {
 .order-motiv__order-button-dark:hover {
     color: #E51937;
     background-color: #FFFFFF;
-
 }
 
 .floor-main__corner-down {
@@ -228,16 +224,14 @@ button {
     letter-spacing: .9px;
     color: #E51937;
     left: 80px;
-    top: 63px;
+    top: 62px;
     position: absolute;
 }
 
 .img-floor-feature__foto-wrapper {
     height: 100%;
     width: 100%;
-    display: flex;
     margin: auto 0 0 0;
-        
     background-image: url(img/2013-tesla-model-s-cockpit.jpg);
     background-position: left bottom;
     background-repeat: no-repeat;
@@ -274,6 +268,8 @@ button {
 .floor-feature__text-body {
     font-weight: 500;
     font-size: 15px;
+    display: block;
+    line-height: 1.2;
 }
 
 .description-floor-feature__outer-wrap {
@@ -403,6 +399,8 @@ button {
 .description-floor-security__text-body {
     font-weight: 500;
     font-size: 15px;
+    display: block;
+    line-height: 1.2;
 }
 
 .description-floor-security__list-item {
@@ -454,7 +452,6 @@ button {
     font-size: 25px;
     margin: -16px 0 0 -2px;
     letter-spacing: .5px;
-
 }
 
 .floor-security__order-motiv{
@@ -477,16 +474,6 @@ button {
     position: relative;
 }
 
-.img-floor-security__note-text-1, .img-floor-security__note-text-2,
-.img-floor-security__note-text-3 {
-    position: absolute;
-    text-align: left;
-}
-
-.img-floor-security__note-img-1, .img-floor-security__note-img-2, .img-floor-security__note-img-3 {
-    position: absolute;
-}
-
 .logo-school {
     position: absolute;
     width: auto;
@@ -502,6 +489,7 @@ button {
     margin-top: 2px;
 }
 
+
 @media (max-width:900px) {
     .description {
         flex-direction: column;
@@ -511,7 +499,8 @@ button {
     }
 }
 
-@media (max-width:376px) {
+
+@media (max-width:700px) {
     .menu-pages {
         display: none;
     }
@@ -520,6 +509,7 @@ button {
     }
     .floor-main {
         margin-bottom: 0px;
+        overflow: hidden;
     }
     .title {
         font-size: 50px; letter-spacing: .8px; margin: 0px 0 -3px 1px;
@@ -539,6 +529,10 @@ button {
         max-width: 448px;
         margin: -42px auto 89px auto;
     }
+    .floor-main__foto-wrap {
+        overflow: hidden;
+        height: 200px;
+    }
     .floor-main__foto {
         background: url(/img/tesla-png-tesla-png-hd-1636-small.png) round;
         height: 166px;
@@ -548,7 +542,7 @@ button {
     }
     .specifications {
         width: 283px;
-        margin: auto auto 42px 42px;
+        margin: auto auto 42px auto;
     }
     .specifications__speedometer {
         width: 38px;
@@ -585,22 +579,30 @@ button {
     .order-motiv__order-button-light {
         letter-spacing: .4px;
     }
+
+    .floor-feature {
+        overflow: hidden;
+    }
     .description-floor{
         height: 304px;
     }
     .description-floor-feature {
-        margin-top: -12px; height: 304px;
+        margin: -12px auto auto auto;
+        padding: 0 29px 0 29px;
+        height: 100%;
+        width: 100%;
     }
     .description-floor-feature__text {
-        margin: -11px 10px 53px 26px;
+        margin: -11px auto 40px auto;
     }
     .description-floor-feature__specifications, .floor-feature__order-motiv,
     .hidden-375px, .description-floor-security__shield, .floor-security__order-motiv {
         display: none;
     }
-
     .img-floor-feature {
-        width: 619px; height: 337px; margin: -2px auto 0 -40px;
+        width: calc(100% + 40px);
+        height: 337px;
+        margin: -2px auto 0 -40px;
     }
     .img-floor-feature__heading {
         display: none;
@@ -608,18 +610,25 @@ button {
     .img-floor-feature__foto-wrapper {
         background-size: 122%;
     }
-
     .floor-security {
-        display: flex; flex-wrap: wrap-reverse;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        overflow: hidden;
     }
     .description-floor-security {
         width: 100%;
+        padding: 0 29px 0 29px;
     }
     .description-floor-security__text {
         margin: -11px auto 48px auto;
+        width: 100%;
     }
     .img-floor-security {
-        margin-bottom: 29px; min-height: 264px; overflow: hidden;
+        margin-bottom: 29px;
+        min-height: 264px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
     .img-floor-security__foto {
         background-image:  url(/img/Car-frame-group.png);
@@ -628,61 +637,16 @@ button {
         position: absolute;
         width: 362px;
         height: 204px;
-        margin: -90px auto auto 0px;
+        margin: 57px auto auto -9px;
     }
-
     .img-floor-security__background {
         transform: translateX(-7px);
           font-size: 100px;
           text-align: left;
-          
-          margin: 26px 0 0 0;
+          margin: 26px 0 0 32px;
           letter-spacing: 1.2px;
           color: #E51937;
           opacity: 0.1;
-      }
-
-      .img-floor-security__note-img-1 {
-        top: 76px;
-        left: 89px;
-        height: 97px;
-    }
-    
-    .img-floor-security__note-img-2 {
-        top: 60px;
-        left: 185px;
-        height: 46px;
-    }
-    
-    .img-floor-security__note-img-3 {
-        top: 203px;
-        left: 204px;
-        height: 41px;
-    }
-
-    .img-floor-security__note-text-1, .img-floor-security__note-text-2,
-    .img-floor-security__note-text-3 {
-        font-size: 7px;
-        letter-spacing: .1px;
-        line-height: 99%;
-    }
-
-    .img-floor-security__note-text-1 {
-        top: 76px;
-        left: 96px;
-        width: 56px;
-    }
-    
-    .img-floor-security__note-text-2 {
-        top: 60px;
-        left: 191px;
-        width: 50px;
-    }
-    
-    .img-floor-security__note-text-3 {
-        top: 234px;
-        left: 210px;
-        width: 90px;
     }
 
     .logo-school {
@@ -690,40 +654,47 @@ button {
     }
 }
 
-@media (min-width:376px) {
+
+@media (min-width:701px){
     .menu-pages {
         display: none;
     }
     .menu-nav__item {
-        display: none;
+        display: flex;
     }
     .floor-main {
         margin-bottom: 36px;
     }
     .title {
-        font-size: 70px; letter-spacing: 1.5px; margin: 0 0 -10px 0;
+        font-size: 90px;
+        letter-spacing: 1.5px;
+        margin: 0 0 -10px 0;
     }
     .subtitle {
-        font-size: 12px; margin-bottom: 26px;
+        font-size: 15px;
+        margin-bottom: 28px;
     }
     .logo {
-        height: 51px; width: 166px; background: url(/img/Tesla-Wordmark-Red.png) round;
+        height: 51px;
+        width: 166px;
+        background: url(/img/Tesla-Wordmark-Red.png) round;
     }
     .header {
         margin: 24px 50px 58px 49px;
     }
     .floor-main__backround {
-        background: url(/img/Tesla-Wordmark-Red-opacity-small.png) center no-repeat;
-        height: 139px;
-        max-width: 448px;
-        margin: -50px auto 100px auto;
+        background: url(/img/Tesla-Wordmark-Red-opacity-small.png);
+        background-size: 100%;
+        margin: -100px auto 100px auto;
+        height: 100%;
+        max-width: 100%;
     }
     .floor-main__foto {
         background: url(/img/tesla-png-tesla-png-hd-1636.png) round;
+        transform: translateY(105px);
+        height: 300px;
+        width: 600px;
         margin: auto auto 30px auto;
-        height: 166px;
-        width: 357px;
-        transform: translateY(50px);
     }
     .specifications {
         width: 375px; margin: auto auto 42px auto;
@@ -770,7 +741,7 @@ button {
         height: 900px;
     }
     .description-floor-feature__text {
-        margin: 51px 72px 53px 52px;
+        margin: 51px 72px 62px 52px;
     }
     .floor-feature__order-motiv, .description-floor-security__shield, .floor-security__order-motiv {
         display: flex;
@@ -808,80 +779,11 @@ button {
         opacity: 0.1;
       }
 
-      .img-floor-security__note-img-1 {
-        top: 223px;
-        left: 169px;
-        height: 281px;
-    }
-    
-    .img-floor-security__note-img-2 {
-        top: 176px;
-        left: 448px;
-        height: 132px;
-    }
-    
-    .img-floor-security__note-img-3 {
-        top: 590px;
-        left: 503px;
-        height: 118px;
-    }
-
-    .img-floor-security__note-text-1, .img-floor-security__note-text-2,
-    .img-floor-security__note-text-3 {
-        width: 235px;
-        font-size: 17px;
-        letter-spacing: .5px;
-        line-height: 100%;
-    }
-
-    .img-floor-security__note-text-1 {
-        top: 220px;
-        left: 190px;
-    }
-    
-    .img-floor-security__note-text-2 {
-        top: 173px;
-        left: 465px;
-        width: 200px;
-    }
-    
-    .img-floor-security__note-text-3 {
-        top: 680px;
-        left: 520px;
-    }
-
     .logo-school {
         display: flex;
     }
 }
 
-@media (min-width:641px) {
-    .menu-pages {
-        display: none;
-    }
-    .menu-nav__item {
-        display: flex;
-    }
-    .title {
-        font-size: 90px;
-    }
-    .subtitle {
-        font-size: 15px;
-    }
-    .floor-main__backround {
-        background: url(/img/Tesla-Wordmark-Red-opacity-small.png);
-        background-size: 100%;
-        margin: -100px auto 100px auto;
-        height: 100%;
-        max-width: 100%;
-    }
-    .floor-main__foto {
-        background: url(/img/tesla-png-tesla-png-hd-1636.png) round;
-        transform: translateY(105px);
-        height: 300px;
-        width: 600px;
-    }
-}
 
 @media (min-width:900px) {
     .description {
@@ -913,5 +815,22 @@ button {
     }
     .specifications {
         width: 375px; margin: auto auto 0 0;
+    }
+}
+
+@media (max-width:370px) {
+    .floor-main__foto {
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    .floor-main__backround {
+        background-size: 100%;
+    }
+    .img-floor-security__foto {
+        width: 300px;
+    }
+
+    .img-floor-security__background {
+        font-size: 80px;
     }
 }
