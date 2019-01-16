@@ -345,9 +345,7 @@ button {
 
 .floor-feature__order-motiv{
     justify-content: space-between;
-    margin: auto 44px 63px 49px;
-    position: absolute;
-    bottom: 0;
+    margin: 174px 44px auto 49px;
     width: calc(100% - 44px - 49px);
 }
 
@@ -402,6 +400,13 @@ button {
     letter-spacing: .1px;
 }
 
+.description-floor-security__stars {
+    width: 325px;
+    text-align: left;
+    letter-spacing: .1px;
+    margin: 59px 68px 0 56px;
+}
+
 .description-floor-security__text-heading {
     font-size: 30px;
     letter-spacing: .55px;
@@ -437,7 +442,7 @@ button {
 .description-floor-security__list-item-stars {
     display: flex;
     align-items: flex-end;
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 .description-floor-security__star {
@@ -451,7 +456,6 @@ button {
 .description-floor-security__shield-text {
     display: flex;
     flex-wrap: wrap;
-    width: 195px;
     margin: -8px 0 0 24px;
     letter-spacing: .1px;
 }
@@ -469,16 +473,13 @@ button {
 .floor-security__order-motiv{
     display: flex;
     justify-content: space-between;
-    margin: auto 44px 61px 38px;
-    position: absolute;
-    bottom: 0;
-    width: calc(100% - 44px - 49px);
+    margin: 55px 44px 61px 38px;
+    width: calc(100% - 44px - 48px);
 }
 
 .floor-security__order-motiv-learn-more {
     display: flex;
     align-items: center;
-    width: 170px;
 }
 
 .img-floor-security {
@@ -771,7 +772,7 @@ button {
         height: 900px; width: 440px;
     }
     .description-floor-security__text {
-        margin: 51px 68px 58px 56px;
+        margin: 51px 68px 0 56px;
     }
 
     .img-floor-security {
